@@ -10,8 +10,10 @@ def dog_years():
     The dog's age in dog's years is 73
     ```
     """
+    dog_age =input('Enter dogs age ' )
 
-    #enter your code here
+    human_age = dog_age*4.87
+
 
 def fizzbuzz(num):
     """
@@ -25,6 +27,19 @@ def fizzbuzz(num):
     """
 
     #enter your code here
+
+    for n in num:
+        if n % 3 == 0:
+            print('Fizz')
+
+        if n %5 == 0 :
+            print('Buzz')
+
+        if n%3 and n%5 == 0:
+            print('FizzBuzz')
+print(fizzbuzz(3))
+
+
 
     
 
@@ -42,6 +57,17 @@ def word_lengths(sentence):
     
     #enter your code here
 
+    sentence = ['Aunty Yankho is amazing']
+
+    dict = {}
+    for word in sentence.split():
+        for key,value in dict:
+            value = len(word)
+            key = word
+
+print(word_lengths('Aunty Yankho is amazing'))
+
+
 def cube_sum(number):
     """
     Create a program that calculates the sum of the cubes of each digit in a number.
@@ -53,3 +79,8 @@ def cube_sum(number):
     """
     
     #enter your code here
+
+    a = 1
+    b = 2
+    c = 3
+
